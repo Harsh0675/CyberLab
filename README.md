@@ -6,11 +6,25 @@ CyberLab is a modular, Termux/Linux-friendly cybersecurity project for authorize
 
 > **Ethical use:** Only assess systems and networks you own or have explicit permission to test.
 
-## ⭐ Why this project stands out
+## ⭐ Why recruiters should care
 
-CyberLab demonstrates practical skills across **Python development, computer networking, cybersecurity, CLI design, testing, automation, and security reporting**.
+CyberLab demonstrates practical engineering across **Python, networking, cybersecurity, CLI architecture, testing, automation, and security reporting**. It is designed as a portfolio project that produces explainable findings rather than simply running scans.
 
-### Core capabilities
+## 🎬 Project demo
+
+### 1. Professional CLI
+
+![CyberLab CLI](docs/demo/01-cyberlab-cli.svg)
+
+### 2. Full security assessment
+
+![Security assessment](docs/demo/02-security-assessment.svg)
+
+### 3. Automated reporting
+
+![Security report](docs/demo/03-report.svg)
+
+## 🚀 Core capabilities
 
 | Area | Capability |
 |---|---|
@@ -22,7 +36,7 @@ CyberLab demonstrates practical skills across **Python development, computer net
 | Risk | Rule-based findings and transparent scoring |
 | Reporting | JSON + HTML security reports |
 | History | Persistent scan history |
-| Engineering | Modular architecture + unit tests |
+| Engineering | Modular architecture + unit tests + CI |
 | Platform | Standard-library Python, Termux/Linux friendly |
 
 ## 🚀 Quick start
@@ -39,27 +53,6 @@ CLI mode:
 python3 cyberlab.py --target 192.168.1.1 --scan
 python3 cyberlab.py --target 192.168.1.1 --assess
 ```
-
-## 🖥️ Example workflow
-
-```text
-╔══════════════════════════════════════╗
-║          🛡️  CYBERLAB               ║
-║   Authorized Security Assessment     ║
-╚══════════════════════════════════════╝
-
-[1] Host availability
-[2] TCP port scan
-[3] Service detection
-[4] Full security assessment
-[5] DNS analysis
-[6] HTTP header audit
-[7] TLS audit
-[8] Scan history
-[9] Exit
-```
-
-A full assessment combines discovery and analysis into a single report, including findings such as exposed legacy services, missing HTTP security headers, TLS weaknesses, and a 0–100 security score.
 
 ## 🏗️ Architecture
 
@@ -105,6 +98,7 @@ CyberLab/
 ├── reports/
 ├── scans/
 ├── config/
+├── docs/demo/
 ├── cyberlab.py
 ├── SECURITY.md
 └── README.md
@@ -147,8 +141,7 @@ SECURITY SCORE: 70/100  Grade: C
 ## 🎯 Skills demonstrated
 
 - Python 3 and standard-library networking
-- TCP/IP fundamentals
-- Socket programming
+- TCP/IP fundamentals and socket programming
 - Service enumeration
 - HTTP and TLS security analysis
 - DNS resolution
